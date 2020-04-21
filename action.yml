@@ -1,0 +1,13 @@
+name: "New Tweet to Review"
+description: "Send Slack notification with draft tweet to be reviewed"
+inputs:
+  message: # id of input
+    description: "Message for the notification"
+    required: true
+    default: "There's a new post to review!"
+runs:
+  using: "node12"
+  main: "index.js"
+branding:
+  icon: bell
+  color: blue
